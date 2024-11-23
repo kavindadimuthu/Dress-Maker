@@ -6,7 +6,6 @@ import state from '../store';
 import Shirt from './Shirt';
 import Backdrop from './Backdrop';
 import CameraRig from './CameraRig';
-import Chair from './Chair';
 import Human from './Human';
 
 const CanvasModel = () => {

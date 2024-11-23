@@ -7,6 +7,7 @@ import { Decal, useGLTF, useTexture } from '@react-three/drei';
 import state from '../store';
 
 const Human = ({ texturePath }) => {
+  // const { scene } = useGLTF("/human-character.glb"); // Load your model
   const { scene } = useGLTF("/avatar.glb"); // Load your model
   const texture = useTexture("/sample-texture-2.jpg"); // Load texture based on user selection
 
@@ -19,6 +20,11 @@ const Human = ({ texturePath }) => {
   });
 
   return <primitive object={scene} scale={0.1} position={[0, 0, 0]} />;
+  // return (
+  //   <group position={[0, 0.75, 0]} scale={0.03}>
+  //     <primitive object={scene} />
+  //   </group>
+  // );
 };
 
 export default Human
